@@ -1,0 +1,74 @@
+plugin.tx_mtmfertighausweltintegration_fertighausweltintegration {
+    view {
+        templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.view.templateRootPath}
+        partialRootPaths.0 = EXT:mtm_fertighauswelt_integration/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.view.partialRootPath}
+        layoutRootPaths.0 = EXT:tx_mtmfertighausweltintegration/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.view.layoutRootPath}
+    }
+    persistence{
+        storagePid = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.persistence.storagePid}
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings{
+        API-AuthString = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.API-AuthString}
+        Stammordner = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.Stammordner}
+        MerklistPid = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.MerklistPid}
+        DatenschutzPid = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.DatenschutzPid}
+    }
+}
+
+# Fix for same Plugin on same Page
+plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.mvc.callDefaultActionIfActionCantBeResolved = 1
+
+page.includeCSS.tx_mtmfertighausweltintegration_fertighausweltintegration = EXT:mtm_fertighauswelt_integration/Resources/Public/Stylesheet/fertighaus.css
+
+# Widget
+lib.requestListWidget = USER
+lib.requestListWidget {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = MtmFertighausweltIntegration
+    pluginName = Fertighausweltintegration
+    vendorName = Mtm
+    switchableControllerActions {
+        Requestlist {
+            1 = widget
+            2 = removeitem
+        }
+    }
+    view < plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.view
+    persistence < plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.persistence
+    settings < plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings
+}
+
+# Module configuration
+module.tx_mtmfertighausweltintegration_web_mtmfertighausweltintegrationfertighausweltsync {
+    persistence{
+        storagePid = {$module.tx_mtmfertighausweltintegration_web_mtmfertighausweltintegrationfertighausweltsync.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:{extension.extensionKey}/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_mtmfertighausweltintegration_fertighausweltsync.view.templateRootPath}
+        partialRootPaths.0 = EXT:mtm_fertighauswelt_integration/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_mtmfertighausweltintegration_fertighausweltsync.view.partialRootPath}
+        layoutRootPaths.0 = EXT:mtm_fertighauswelt_integration/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_mtmfertighausweltintegration_fertighausweltsync.view.layoutRootPath}
+    }
+    settings{
+        API-AuthString = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.API-AuthString}
+        Stammordner = {$plugin.tx_mtmfertighausweltintegration_fertighausweltintegration.settings.Stammordner}
+    }
+    styles{
+        backend = EXT:mtm_fertighauswelt_integration/Resources/Public/Stylesheet/Backend/backend.css
+    }
+}

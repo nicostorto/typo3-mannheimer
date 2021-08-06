@@ -1,0 +1,58 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Listing for Manufacturer</h1>
+
+<f:flashMessages />
+
+<table  class="tx_mtmfertighausweltintegration" >
+	<tr>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_name" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_slogan" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.description" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.email" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.phone" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.fax" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.website" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.strasse" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.plz" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.ort" /></th>
+		<th><f:translate key="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_logo" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{manufacturers}" as="manufacturer">
+		<tr>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.manufacturerName}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.manufacturerSlogan}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.email}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.phone}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.fax}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.website}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.strasse}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.plz}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.ort}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{manufacturer : manufacturer}"> {manufacturer.manufacturerLogo.originalResource.name}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{manufacturer : manufacturer}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{manufacturer : manufacturer}">Delete</f:link.action></td>
+		</tr>
+		</f:for>
+</table>
+
+<f:link.action action="new">New Manufacturer</f:link.action>
+	</f:section>
+</html>

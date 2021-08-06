@@ -1,0 +1,1295 @@
+/*
+  ______             __        __          __     __  __
+ /      \           /  |      /  |        /  |   /  |/  |
+/$$$$$$  |  ______  $$/   ____$$ |        $$ |   $$ |$$/   ______   __   __   __
+$$ | _$$/  /      \ /  | /    $$ | ______ $$ |   $$ |/  | /      \ /  | /  | /  |
+$$ |/    |/$$$$$$  |$$ |/$$$$$$$ |/      |$$  \ /$$/ $$ |/$$$$$$  |$$ | $$ | $$ |
+$$ |$$$$ |$$ |  $$/ $$ |$$ |  $$ |$$$$$$/  $$  /$$/  $$ |$$    $$ |$$ | $$ | $$ |
+$$ \__$$ |$$ |      $$ |$$ \__$$ |          $$ $$/   $$ |$$$$$$$$/ $$ \_$$ \_$$ |
+$$    $$/ $$ |      $$ |$$    $$ |           $$$/    $$ |$$       |$$   $$   $$/
+ $$$$$$/  $$/       $$/  $$$$$$$/             $/     $$/  $$$$$$$/  $$$$$/$$$$/
+*/
+.tx-mtm-fertighauswelt-integration-grid .houseContainer {
+  padding: 0 16px 0 0 !important;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer a {
+  display: block;
+  height: calc(100% - 45px);
+  margin-bottom: 35px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer a:hover {
+  margin-top: -10px;
+  margin-bottom: 45px;
+  transition: margin 0.3s;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper {
+  position: relative;
+  height: 100%;
+  padding-bottom: 90px;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper .houseImage {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper .houseImage img {
+  max-width: 100%;
+  height: auto;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper .houseName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper .houseExhibitor {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #9E9E9E;
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-grid .houseContainer .houseWrapper .houseNumber {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #9E9E9E;
+  position: absolute;
+  bottom: 85px;
+  padding: 30px 20px;
+}
+.showManufacturerList .manufacturerContainer {
+  padding: 0 15px 0 0 !important;
+  margin-bottom: 15px;
+}
+.showManufacturerList .manufacturerContainer a {
+  display: block;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.showManufacturerList .manufacturerContainer a:hover {
+  margin-top: -10px;
+  transition: margin 0.3s;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.showManufacturerList .manufacturerContainer .manufacturerWrapper {
+  position: relative;
+  height: 100%;
+  padding-bottom: 25px;
+}
+.showManufacturerList .manufacturerContainer .manufacturerWrapper .manufacturerImage {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.showManufacturerList .manufacturerContainer .manufacturerWrapper .manufacturerImage img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.showManufacturerList .manufacturerContainer .manufacturerWrapper .manufacturerName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 20px;
+}
+.showManufacturerList .manufacturerContainer .manufacturerWrapper .manufacturerSlogan {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #9E9E9E;
+  padding: 0 20px;
+}
+/*
+ _______               __                __  __          __     __  __
+/       \             /  |              /  |/  |        /  |   /  |/  |
+$$$$$$$  |  ______   _$$ |_     ______  $$/ $$ |        $$ |   $$ |$$/   ______   __   __   __
+$$ |  $$ | /      \ / $$   |   /      \ /  |$$ | ______ $$ |   $$ |/  | /      \ /  | /  | /  |
+$$ |  $$ |/$$$$$$  |$$$$$$/    $$$$$$  |$$ |$$ |/      |$$  \ /$$/ $$ |/$$$$$$  |$$ | $$ | $$ |
+$$ |  $$ |$$    $$ |  $$ | __  /    $$ |$$ |$$ |$$$$$$/  $$  /$$/  $$ |$$    $$ |$$ | $$ | $$ |
+$$ |__$$ |$$$$$$$$/   $$ |/  |/$$$$$$$ |$$ |$$ |          $$ $$/   $$ |$$$$$$$$/ $$ \_$$ \_$$ |
+$$    $$/ $$       |  $$  $$/ $$    $$ |$$ |$$ |           $$$/    $$ |$$       |$$   $$   $$/
+$$$$$$$/   $$$$$$$/    $$$$/   $$$$$$$/ $$/ $$/             $/     $$/  $$$$$$$/  $$$$$/$$$$/
+*/
+.tx-mtm-fertighauswelt-integration-detail {
+  margin-top: -312px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .houseHeaderImage {
+  position: relative;
+  width: 150%;
+  height: 600px;
+  left: 0;
+  top: 100px;
+  margin: 0 -25%;
+  overflow: hidden;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .houseHeaderImage img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -100px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox {
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+  margin-top: 25px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement {
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement.stickyHouseBar {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #00000029;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseInfos {
+  margin-bottom: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseInfos .houseNumber {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  color: #9E9E9E;
+  margin: 15px 0 15px 20px !important;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseInfos .houseName {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #000000;
+  flex-grow: 1;
+  margin: 15px 0 15px 35px !important;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseContactData .mtmButton {
+  justify-content: flex-end;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .mtmButton {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .mtmButton a {
+  font-weight: 400;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .mtmButton a i {
+  font-size: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .mtmButton.addHouse a i {
+  padding-left: 10px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .mtmButton.addedHouse a i {
+  padding-right: 10px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails {
+  padding: 30px 0;
+  margin-top: 0;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .exhibitorLogo {
+  padding: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .exhibitorLogo img {
+  display: block;
+  max-width: 80%;
+  width: auto;
+  max-height: 60px;
+  margin: 0 auto;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseStil {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseRooms {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseRooms .attributeValue {
+  width: 110px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseLivingSpace {
+  display: flex;
+  flex-wrap: wrap;
+  width: 110px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseLivingSpace .attributeValue {
+  text-transform: lowercase;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseEnergeticStandard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+  padding-left: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .attributeKey {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: #9E9E9E;
+  width: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .attributeValue {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: capitalize;
+  color: #000000;
+  width: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick {
+  flex-wrap: nowrap;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev,
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  padding: 5px;
+  transition: margin 0.3s;
+  z-index: 100;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev:hover,
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next:hover {
+  margin-top: -10px;
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev:before,
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next:before {
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  color: #2B8328;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  padding: 5px;
+  opacity: 1;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev {
+  left: -65px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev:before {
+  content: '\f104' !important;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next {
+  right: -65px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next:before {
+  content: '\f105' !important;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list {
+  padding: 20px 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list .slick-track .slick-slide .imageSlideItem {
+  width: auto !important;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+  margin: 0 15px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list .slick-track .slick-slide .imageSlideItem .imageSlideImage {
+  max-height: 245px;
+  overflow: hidden;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list .slick-track .slick-slide .imageSlideItem .imageSlideImage img {
+  width: 100%;
+  height: auto;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list .slick-track .slick-slide .imageSlideItem .imageSlideDescription {
+  padding: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-list .slick-track .slick-slide .imageSlideItem .imageSlideDescription span {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem {
+  width: auto !important;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem .imageSlideImage {
+  max-height: 245px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem .imageSlideImage a {
+  display: block;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem .imageSlideImage a img {
+  width: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem .imageSlideDescription {
+  padding: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel .imageSlideItem .imageSlideDescription span {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageGrid .imageContainer {
+  width: auto !important;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageGrid .imageContainer .imageGridItem {
+  max-height: 245px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageGrid .imageContainer .imageGridItem a img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #contactData {
+  margin-top: -300px;
+  padding-top: 300px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #contactData .contactDataBox {
+  display: block;
+  padding: 20px 30px;
+  margin: 20px 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse h2 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .totalFloorSize {
+  font-family: Roboto;
+  font-size: 22px;
+  text-align: left;
+  color: #000000;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row {
+  margin-left: -35px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row .groundPlanImageBox {
+  display: block;
+  padding: 20px 30px;
+  margin: 35px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row .groundPlanImageBox .groundPlanImage {
+  padding: 0 30px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row .groundPlanImageBox .groundPlanImage a {
+  display: block;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row .groundPlanImageBox .groundPlanImage a img {
+  display: block;
+  max-width: 100%;
+  max-height: 260px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .row .groundPlanImageBox .groundPlanDescription {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  padding-top: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .youtubeContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 50px 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .youtubeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHeaderImage {
+  position: relative;
+  width: 150%;
+  height: 600px;
+  left: 0;
+  top: 100px;
+  margin: 0 -25%;
+  overflow: hidden;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHeaderImage img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -100px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox {
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+  margin-top: 25px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement {
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement.stickyManufacturerBar {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #00000029;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement .manufacturerName {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  margin: 15px 30px 15px 20px !important;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement .manufacturerSlogan {
+  font-size: 24px;
+  line-height: 24px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails {
+  padding: 30px 0;
+  margin-top: 0;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerLogo {
+  padding: 0;
+  height: 60px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerLogo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerContact {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerAddress {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  border-left: 1px solid rgba(112, 112, 112, 0.38);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .attributeKey {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: #9E9E9E;
+  width: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .attributeValue {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  width: 100%;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer {
+  padding: 0 15px 0 0 !important;
+  margin-bottom: 15px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer a {
+  display: block;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer a:hover {
+  margin-top: -10px;
+  transition: margin 0.3s;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer .houseWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer .houseWrapper .houseImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer .houseWrapper .houseImage img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer .houseWrapper .houseName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .manufacturerHouses .houses .houseContainer .houseWrapper .houseNumber {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  color: #9E9E9E;
+  padding: 15px 20px;
+}
+/*
+ _______                                                       __      __  __              __             __     __  __
+/       \                                                     /  |    /  |/  |            /  |           /  |   /  |/  |
+$$$$$$$  |  ______    ______   __    __   ______    _______  _$$ |_   $$ |$$/   _______  _$$ |_          $$ |   $$ |$$/   ______   __   __   __
+$$ |__$$ | /      \  /      \ /  |  /  | /      \  /       |/ $$   |  $$ |/  | /       |/ $$   |  ______ $$ |   $$ |/  | /      \ /  | /  | /  |
+$$    $$< /$$$$$$  |/$$$$$$  |$$ |  $$ |/$$$$$$  |/$$$$$$$/ $$$$$$/   $$ |$$ |/$$$$$$$/ $$$$$$/  /      |$$  \ /$$/ $$ |/$$$$$$  |$$ | $$ | $$ |
+$$$$$$$  |$$    $$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$      \   $$ | __ $$ |$$ |$$      \   $$ | __$$$$$$/  $$  /$$/  $$ |$$    $$ |$$ | $$ | $$ |
+$$ |  $$ |$$$$$$$$/ $$ \__$$ |$$ \__$$ |$$$$$$$$/  $$$$$$  |  $$ |/  |$$ |$$ | $$$$$$  |  $$ |/  |         $$ $$/   $$ |$$$$$$$$/ $$ \_$$ \_$$ |
+$$ |  $$ |$$       |$$    $$ |$$    $$/ $$       |/     $$/   $$  $$/ $$ |$$ |/     $$/   $$  $$/           $$$/    $$ |$$       |$$   $$   $$/
+$$/   $$/  $$$$$$$/  $$$$$$$ | $$$$$$/   $$$$$$$/ $$$$$$$/     $$$$/  $$/ $$/ $$$$$$$/     $$$$/             $/     $$/  $$$$$$$/  $$$$$/$$$$/
+                          $$ |
+                          $$ |
+                          $$/
+*/
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 25px);
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem:hover {
+  margin-top: -10px;
+  margin-bottom: 25px;
+  transition: margin 0.3s;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseNumber {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  color: #9E9E9E;
+  padding: 15px;
+  min-width: 32px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseImage {
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseInfo {
+  flex-grow: 1;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseInfo .houseName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseInfo .manufacturerName {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #9E9E9E;
+  padding: 0 20px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .listItemActions {
+  padding-right: 15px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .listItemActions a i {
+  font-size: 30px;
+  color: #9E9E9E;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .listItemActions a i:hover {
+  color: #EB002A;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group a {
+  color: #189538;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column .form-field {
+  width: calc(100% - 22px);
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #A7A7A7;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol {
+  display: flex;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol .plzContainer {
+  width: 30%;
+  padding-right: 5px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol .ortContainer {
+  width: 70%;
+  padding-left: 5px;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-actions .btn-primary {
+  padding: 11px 20px;
+  border: none;
+  color: #FFF;
+  background-color: #189538;
+  font-size: 20px;
+  font-weight: 400;
+}
+.tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-actions .btn-primary:hover {
+  cursor: pointer;
+  background-color: #1fc149;
+}
+/*
+ __       __  __        __                        __             __     __  __
+/  |  _  /  |/  |      /  |                      /  |           /  |   /  |/  |
+$$ | / \ $$ |$$/   ____$$ |  ______    ______   _$$ |_          $$ |   $$ |$$/   ______   __   __   __
+$$ |/$  \$$ |/  | /    $$ | /      \  /      \ / $$   |  ______ $$ |   $$ |/  | /      \ /  | /  | /  |
+$$ /$$$  $$ |$$ |/$$$$$$$ |/$$$$$$  |/$$$$$$  |$$$$$$/  /      |$$  \ /$$/ $$ |/$$$$$$  |$$ | $$ | $$ |
+$$ $$/$$ $$ |$$ |$$ |  $$ |$$ |  $$ |$$    $$ |  $$ | __$$$$$$/  $$  /$$/  $$ |$$    $$ |$$ | $$ | $$ |
+$$$$/  $$$$ |$$ |$$ \__$$ |$$ \__$$ |$$$$$$$$/   $$ |/  |         $$ $$/   $$ |$$$$$$$$/ $$ \_$$ \_$$ |
+$$$/    $$$ |$$ |$$    $$ |$$    $$ |$$       |  $$  $$/           $$$/    $$ |$$       |$$   $$   $$/
+$$/      $$/ $$/  $$$$$$$/  $$$$$$$ | $$$$$$$/    $$$$/             $/     $$/  $$$$$$$/  $$$$$/$$$$/
+                           /  \__$$ |
+                           $$    $$/
+                            $$$$$$/
+*/
+#requestListWidget {
+  padding: 15px 0;
+}
+#requestListWidget #requestListTrigger {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #C16700;
+  border-radius: 50px;
+  text-align: center;
+}
+#requestListWidget #requestListTrigger:hover {
+  color: #C16700;
+  background-color: #fff;
+  border: 1px solid #C16700;
+}
+#requestListWidget #requestListTrigger:hover .quantity {
+  background-color: #fff;
+  border: 1px solid #189538;
+  color: #189538;
+}
+#requestListWidget #requestListTrigger .la-list {
+  font-size: 22px;
+  margin-top: 1px;
+}
+#requestListWidget #requestListTrigger .quantity {
+  position: absolute;
+  background-color: #189538;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-top: -35px;
+  margin-left: 18px;
+}
+#requestListWidget #requestListTrigger .quantity .quantity-text {
+  font-size: 14px;
+}
+#requestListWidget #widgetHouseList {
+  position: absolute;
+  max-width: 400px;
+  visibility: hidden;
+  top: 0;
+  transition: 0.5s;
+  z-index: 10000;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px;
+}
+#requestListWidget #widgetHouseList.widgetListOpen {
+  visibility: visible;
+  top: 55px;
+  transition: 0.5s;
+}
+#requestListWidget #widgetHouseList .widgetListItem {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+#requestListWidget #widgetHouseList .widgetListItem:last-child {
+  border-bottom: none;
+}
+#requestListWidget #widgetHouseList .widgetListItem .houseNumber {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9E9E9E;
+  padding: 5px;
+  min-width: 32px;
+}
+#requestListWidget #widgetHouseList .widgetListItem .houseInfo {
+  flex-grow: 1;
+}
+#requestListWidget #widgetHouseList .widgetListItem .houseInfo .houseName {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 10px;
+}
+#requestListWidget #widgetHouseList .widgetListItem .houseInfo .manufacturerName {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #9E9E9E;
+  padding: 0 10px;
+}
+#requestListWidget #widgetHouseList .widgetListItem .listItemActions a i {
+  font-size: 25px;
+  color: #9E9E9E;
+}
+#requestListWidget #widgetHouseList .widgetListItem .listItemActions a i:hover {
+  color: #EB002A;
+}
+#requestListWidget #widgetHouseList .btn-primary {
+  padding: 11px 20px;
+  margin: 15px auto 0 auto;
+  border: none;
+  color: #FFF;
+  background-color: #189538;
+  font-size: 16px;
+  font-weight: 400;
+}
+#requestListWidget #widgetHouseList .btn-primary:hover {
+  cursor: pointer;
+  padding: 9px 18px;
+  color: #189538;
+  background-color: #FFFFFF;
+  border: 2px solid #189538;
+}
+#mobileNavTriggers #requestListWidget {
+  padding: 10px;
+}
+#mobileNavTriggers #widgetHouseList {
+  max-width: 400px;
+  width: auto;
+}
+#mobileNavTriggers #widgetHouseList.widgetListOpen {
+  right: 0;
+  top: 35px;
+}
+/*Slider*/
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-prev.slick-arrow,
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-next.slick-arrow {
+  position: absolute;
+  z-index: 100;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-prev.slick-arrow {
+  left: -25px;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-next.slick-arrow {
+  right: -25px;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide {
+  margin: 0 10px;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide:hover {
+  margin: -10px 10px 10px 10px;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer {
+  height: 100%;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer .slideImage {
+  display: flex;
+  width: 100%;
+  height: 160px;
+  align-items: center;
+  overflow: hidden;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer .slideImage img {
+  position: absolute;
+  min-width: 100%;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer .slideInfos {
+  display: flex;
+  padding: 10px 0;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer .slideInfos .houseNumber {
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  color: #9E9E9E;
+}
+.tx-mtm-fertighauswelt-integration-slider #houseCarousel .slick-list .slick-slide .slideHouseContainer a .slideContainer .slideInfos .houseName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 5px;
+}
+/*Geländeplan*/
+.SitePlan .mobileCloseContainer {
+  display: none;
+  position: absolute;
+  right: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  background-color: #189538;
+  color: #FFFFFF;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.SitePlan .mobileCloseContainer #mobileClose {
+  padding-top: 5px;
+}
+.SitePlan .column {
+  max-height: 850px;
+  overflow: hidden;
+}
+.SitePlan .column #sitePlanDFC {
+  width: 100%;
+  height: auto;
+}
+.SitePlan .column .popupContainer.hidden {
+  display: none;
+}
+.SitePlan .column .popupContainer .houseContainer {
+  display: block;
+  height: calc(100% - 45px);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  transition: margin 0.3s;
+  padding: 0 !important;
+  margin: 0 10px;
+}
+.SitePlan .column .popupContainer .houseContainer .houseImage {
+  height: auto;
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.SitePlan .column .popupContainer .houseContainer .houseImage img {
+  max-width: 100%;
+  height: auto;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper {
+  padding: 0 30px 30px 30px;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper .row {
+  margin: 20px 0 0 0;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper .row.twoColumns .column {
+  padding: 0;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper .houseName {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #000000;
+  padding: 0;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper .houseExhibitor {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #9E9E9E;
+  padding: 0;
+}
+.SitePlan .column .popupContainer .houseContainer .houseWrapper .houseNumber {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #9E9E9E;
+  position: relative;
+  bottom: unset;
+  padding: 10px 0px;
+}
+.SitePlan .column .popupContainer .houseContainer .mtmButton {
+  justify-content: flex-start;
+  padding: 0 30px 30px 30px;
+}
+.SitePlan .column .popupContainer .houseContainer .mtmButton a {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #189538;
+  text-align: center;
+}
+.SitePlan .column .popupContainer .houseContainer .mtmButton a:hover {
+  margin-top: 0;
+  transition: margin 0.3s;
+  background-color: #FFFFFF;
+  color: #189538;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+}
+/*
+ _______                                           ______    __                __
+/       \                                         /      \  /  |              /  |
+$$$$$$$  |  ______    _______   ______           /$$$$$$  |_$$ |_    __    __ $$ |  ______    _______
+$$ |__$$ | /      \  /       | /      \          $$ \__$$// $$   |  /  |  /  |$$ | /      \  /       |
+$$    $$< /$$$$$$  |/$$$$$$$/ /$$$$$$  |         $$      \$$$$$$/   $$ |  $$ |$$ |/$$$$$$  |/$$$$$$$/
+$$$$$$$  |$$    $$ |$$      \ $$ |  $$ |          $$$$$$  | $$ | __ $$ |  $$ |$$ |$$    $$ |$$      \
+$$ |  $$ |$$$$$$$$/  $$$$$$  |$$ |__$$ |__       /  \__$$ | $$ |/  |$$ \__$$ |$$ |$$$$$$$$/  $$$$$$  |
+$$ |  $$ |$$       |/     $$/ $$    $$//  |      $$    $$/  $$  $$/ $$    $$ |$$ |$$       |/     $$/
+$$/   $$/  $$$$$$$/ $$$$$$$/  $$$$$$$/ $$/        $$$$$$/    $$$$/   $$$$$$$ |$$/  $$$$$$$/ $$$$$$$/
+                              $$ |                                  /  \__$$ |
+                              $$ |                                  $$    $$/
+                              $$/                                    $$$$$$/
+*/
+@media only screen and (max-width: 1200px) {
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-next {
+    right: -10px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house #houseImageCarousel.slick .slick-prev {
+    left: -10px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement.stickyHouseBar,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseArrangement.stickyHouseBar {
+    width: 100%;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseInfos .houseNumber,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseArrangement .houseInfos .houseNumber {
+    margin: 15px 0 15px 15px !important;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseInfos .houseName,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseArrangement .houseInfos .houseName {
+    margin: 20px 0 15px 10px !important;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails:nth-child(3),
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails:nth-child(3) {
+    border-left: none;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .col-sm-6,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .col-sm-6 {
+    padding-left: 20px !important;
+    border-left: none;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .exhibitorLogo,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .exhibitorLogo {
+    order: 1;
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .exhibitorLogo img,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .exhibitorLogo img {
+    margin: 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseStil,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .houseStil {
+    order: 2;
+    margin: 15px 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseRooms,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .houseRooms {
+    order: 3;
+    margin: 15px 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseLivingSpace,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .houseLivingSpace {
+    order: 5;
+    margin: 15px 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseEnergeticStandard,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .houseDetails .houseEnergeticStandard {
+    order: 6;
+    margin: 15px 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement {
+    flex-wrap: wrap;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement .houseGetInfos .addHouse {
+    margin: 0 0 15px 10px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement {
+    padding: 0 15px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement.stickyHouseBar {
+    top: 60px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseArrangement.stickyHouseBar .houseInfos .houseNumber {
+    display: none;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails {
+    padding: 30px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .exhibitorLogo img {
+    margin: 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseStil,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseRooms,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseLivingSpace,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox .houseDetails .houseEnergeticStandard {
+    border-left: none;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .threeColumns {
+    margin-left: 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .threeColumns .groundPlanImageBox {
+    margin: 35px 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .threeColumns .groundPlanImageBox .groundPlanImage a img {
+    max-height: unset;
+    width: 60%;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .grundrisse .threeColumns .groundPlanDescription {
+    padding: 0 30px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement {
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement.stickyManufacturerBar {
+    top: 60px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement .manufacturerName {
+    margin-left: 0 !important;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerArrangement .manufacturerSlogan {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails {
+    padding: 30px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerLogo img {
+    margin: 0;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerContact,
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-manufacturer .infoBox .manufacturerDetails .manufacturerAddress {
+    border-left: none;
+  }
+  .SitePlan .mobileCloseContainer {
+    display: block;
+  }
+  .SitePlan .column {
+    max-height: fit-content;
+  }
+  .SitePlan .column .popupContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 90%;
+    z-index: 10001;
+  }
+  .SitePlan .column .popupContainer .houseContainer {
+    position: relative;
+    left: -50%;
+    top: -50%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .tx-mtm-fertighauswelt-integration-grid .showHomeList .houseContainer.col-xs-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0 !important;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .houseHeaderImage {
+    top: 160px;
+    margin-left: -25px;
+  }
+  .tx-mtm-fertighauswelt-integration-detail .tx-mtm-fertighauswelt-integration-content-house .infoBox {
+    margin-top: 85px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .tx-mtm-fertighauswelt-integration-requestlist .requestListContainer .requestListItem .houseImage {
+    display: none;
+  }
+  .tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol {
+    display: block;
+  }
+  .tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol .plzContainer,
+  .tx-mtm-fertighauswelt-integration-requestlist .requestFormContainer .requestForm .form-group .column.multicol .ortContainer {
+    width: auto;
+    padding: 0;
+  }
+}
+.typo3-messages {
+  padding: 0;
+}
+.typo3-messages .alert {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 11px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+}
+.typo3-messages .alert.alert-success {
+  color: #fff;
+  background-color: #189538;
+  border-color: transparent;
+}
+.typo3-messages .alert.alert-danger {
+  color: #fff;
+  background-color: #E6201A;
+  border-color: transparent;
+}
+.typo3-messages .alert .alert-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.typo3-messages .alert .alert-title h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.typo3-messages .alert .alert-body,
+.typo3-messages .alert .alert-message {
+  margin: 0;
+  color: inherit;
+}
+/*# sourceMappingURL=fertighaus.css.map */

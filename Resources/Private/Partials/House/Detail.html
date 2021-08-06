@@ -1,0 +1,240 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <div class="tx-mtm-fertighauswelt-integration-content-house" >
+        <div class="houseHeaderImage" style="background-image: url({f:uri.image(image: house.sliderImages.0)}); background-size: cover; background-position: center;"></div>
+        <div class="infoBox">
+            <div class="houseArrangement row">
+                <f:if condition="{house.contactData}">
+                    <f:then>
+                        <div class="houseInfos row col-xs-12 col-sm-12 col-md-4 col-lg-6">
+                            <span class="houseNumber">{house.houseNumber}</span>
+                            <h1 class="houseName">{house.houseName}</h1>
+                        </div>
+                        <div class="houseContactData col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                            <div class="mtmButton primaryColor btn_left">
+                                <a href="#contactData">Kontakt Musterhaus</a>
+                            </div>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div class="houseInfos row col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                            <span class="houseNumber">{house.houseNumber}</span>
+                            <h1 class="houseName">{house.houseName}</h1>
+                        </div>
+                    </f:else>
+                </f:if>
+                <div class="houseGetInfos col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <f:if condition="{onRequestList}">
+                        <f:then>
+                            <div class="mtmButton addedHouse primaryColor btn_left">
+                                <f:link.page pageUid="{settings.MerklistPid}" title="Zur Merkliste">
+                                    <i class="la la-exclamation-circle"></i> Bereits auf der Merkliste
+                                </f:link.page>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div class="mtmButton addHouse primaryColor btn_left">
+                                <f:link.action action="additem" controller="Requestlist" arguments="{id: house.uid}" title="Fertighaus zur Merkliste hinzufügen">
+                                    Kostenlose Infos anfordern <i class="la la-arrow-right"></i>
+                                </f:link.action>
+                            </div>
+                        </f:else>
+                    </f:if>
+
+                </div>
+            </div>
+            <div class="houseDetails row">
+                <div class="exhibitorLogo col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <f:if condition="{manufacturer.manufacturerLogo}">
+                        <f:then>
+                            <f:link.action pageUid="{settings.manufacturerdetailpage}" controller="Manufacturer" action="show" arguments="{id: manufacturer.uid}">
+                                <f:image image="{manufacturer.manufacturerLogo}" />
+                            </f:link.action>
+                        </f:then>
+                        <f:else>
+                            <f:link.action pageUid="{settings.manufacturerdetailpage}" controller="Manufacturer" action="show" arguments="{id: manufacturer.uid}">
+                                <span class="attributeValue">{manufacturer.manufacturerName}</span>
+                            </f:link.action>
+                        </f:else>
+                    </f:if>
+                </div>
+                <f:if condition="{house.architectialStyle} != ''">
+                    <div class="houseStil col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <span class="attributeKey">Baustil:</span>
+                        <span class="attributeValue">{house.architectialStyle}</span>
+                    </div>
+                </f:if>
+                <f:if condition="{house.numberOfRooms} != 0 && {house.numberOfRooms} != ''">
+                    <div class="houseRooms col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <span class="attributeKey">Zimmer:</span>
+                        <span class="attributeValue">{house.numberOfRooms}</span>
+                    </div>
+                </f:if>
+                <f:if condition="{house.livingSpace} != 0 && {house.livingSpace} != ''">
+                    <div class="houseLivingSpace col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <span class="attributeKey">Wohnfläche:</span>
+                        <span class="attributeValue">{house.livingSpace} m&sup2;</span>
+                    </div>
+                </f:if>
+                <f:if condition="{house.energeticStandard} != ''">
+                    <div class="houseEnergeticStandard col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <span class="attributeKey">Energetischer Standard</span>
+                        <span class="attributeValue">{house.energeticStandard}</span>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+
+        <f:if condition="{house.sliderImages -> f:count()} > 3">
+            <f:then>
+                <div id="houseImageCarousel" class="row threeColumns slick">
+                    <f:for each="{house.sliderImages}" as="image">
+                        <div class="imageSlideItem">
+                            <div class="imageSlideImage">
+                                <a href="{image.originalResource.PublicURL}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{image}" />
+                                </a>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </f:then>
+            <f:else>
+                <div id="houseImageGrid" class="houses row threeColumns">
+                    <f:for each="{house.sliderImages}" as="image">
+                        <div class="imageContainer column col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="imageGridItem">
+                                <a href="{image.originalResource.PublicURL}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{image}" />
+                                </a>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </f:else>
+        </f:if>
+
+        <f:if condition="{house.contactData}">
+            <div id="contactData">
+                <div class="row">
+                    <div class="contactDataBox col col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                        <div class="contactDataContent">
+                            <h3>Kontaktdaten Musterhausanbieter</h3>
+                            <f:format.html>{house.contactData}</f:format.html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+
+        <f:if condition="{house.layoutBasement} || {house.layoutGroundFloor} || {house.layoutUpstairs} || {house.layoutAttic}">
+            <div class="grundrisse">
+                <h2>Grundrisse</h2>
+                <f:if condition="{house.livingSpace}">
+                    <span class="totalFloorSize">Gesamte Wohnfläche: {house.livingSpace} m&sup2;</span>
+                </f:if>
+                <div class="row threeColumns">
+                    <f:if condition="{house.layoutBasement}">
+                        <div class="groundPlanImageBox col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="groundPlanImage">
+                                <a href="{house.layoutBasement.originalResource.publicUrl}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{house.layoutBasement}" />
+                                </a>
+                            </div>
+                            <f:if condition="{house.livingSpaceBasement} && {house.livingSpaceBasement} != 0,00">
+                                <f:then>
+                                    <div class="groundPlanDescription">
+                                        <span>Keller: {house.livingSpaceBasement} m&sup2;</span>
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <div class="groundPlanDescription">
+                                        <span>Keller</span>
+                                    </div>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:if>
+                    <f:if condition="{house.layoutGroundFloor}">
+                        <div class="groundPlanImageBox col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="groundPlanImage">
+                                <a href="{house.layoutGroundFloor.originalResource.publicUrl}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{house.layoutGroundFloor}" />
+                                </a>
+                            </div>
+                            <f:if condition="{house.livingSpaceGroundFloor} && {house.livingSpaceGroundFloor} != 0,00">
+                                <f:then>
+                                    <div class="groundPlanDescription">
+                                        <span>Erdgeschoss: {house.livingSpaceGroundFloor} m&sup2;</span>
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <div class="groundPlanDescription">
+                                        <span>Erdgeschoss</span>
+                                    </div>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:if>
+                    <f:if condition="{house.layoutUpstairs}">
+                        <div class="groundPlanImageBox col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="groundPlanImage">
+                                <a href="{house.layoutUpstairs.originalResource.publicUrl}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{house.layoutUpstairs}" />
+                                </a>
+                            </div>
+                            <f:if condition="{house.livingSpaceUpstairs} && {house.livingSpaceUpstairs} != 0,00">
+                                <f:then>
+                                    <div class="groundPlanDescription">
+                                        <span>Obergeschoss: {house.livingSpaceUpstairs} m&sup2;</span>
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <div class="groundPlanDescription">
+                                        <span>Obergeschoss</span>
+                                    </div>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:if>
+                    <f:if condition="{house.layoutAttic}">
+                        <div class="groundPlanImageBox col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="groundPlanImage">
+                                <a href="{house.layoutAttic.originalResource.publicUrl}" class="jnlightbox" rel="lightbox[lb763]">
+                                    <f:image image="{house.layoutAttic}" />
+                                </a>
+                            </div>
+                            <f:if condition="{house.livingSpaceAttic}  && {house.livingSpaceAttic} != 0,00">
+                                <f:then>
+                                    <div class="groundPlanDescription">
+                                        <span>Dachgeschoss: {house.livingSpaceAttic} m&sup2;</span>
+                                    </div>
+                                </f:then>
+                                <f:else>
+                                    <div class="groundPlanDescription">
+                                        <span>Dachgeschoss</span>
+                                    </div>
+                                </f:else>
+                            </f:if>
+                        </div>
+                    </f:if>
+                </div>
+            </div>
+        </f:if>
+        <div class="beschreibung">
+            <h2>Beschreibung</h2>
+            <div class="beschreibungContent">
+                <f:format.html>{house.houseDescription}</f:format.html>
+            </div>
+        </div>
+        <f:if condition="{house.youtubeData}">
+            <div class="youtubeContainer">
+                <f:format.raw>{house.youtubeData}</f:format.raw>
+            </div>
+        </f:if>
+        <f:if condition="{vtour}">
+            <div class="virtualTour">
+                <iframe src="{vtour}" id="idIframe" width="100%" height=550px"></iframe>
+            </div>
+        </f:if>
+    </div>
+</html>

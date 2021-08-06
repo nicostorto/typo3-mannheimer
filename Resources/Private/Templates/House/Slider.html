@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Slider" />
+
+	<f:section name="content">
+		<f:flashMessages />
+
+		<div id="houseCarousel" class="row fourColumns slick t3s-slickslider">
+			<f:for each="{houses}" as="house">
+				<f:render partial="House/SlideItem" arguments="{house:house}" />
+			</f:for>
+		</div>
+	</f:section>
+</html>

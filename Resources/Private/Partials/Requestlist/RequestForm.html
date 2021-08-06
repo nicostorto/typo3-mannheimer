@@ -1,0 +1,77 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+	<div class="requestFormContainer">
+		<f:form class="requestForm" action="sendrequest" controller="Requestlist" addQueryStringMethod="POST" arguments="{listItems: listItems}" enctype="multipart/form-data">
+			<div class="row twoColumns form-group">
+				<div class="column col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<label for="vorname">Vorname*</label>
+					<f:form.textfield class="form-field form-control" name="vorname" required="true"/>
+				</div>
+				<div class="column col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<label for="nachname">Nachname*</label>
+					<f:form.textfield class="form-field form-control" name="nachname" required="true"/>
+				</div>
+			</div>
+			<div class="row twoColumns form-group">
+				<div class="column col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<label for="strasse">Strasse & Hausnr.*</label>
+					<f:form.textfield class="form-field form-control" name="strasse" required="true"/>
+				</div>
+				<div class="column multicol col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="plzContainer">
+						<label for="plz">Postleitzahl*</label>
+						<f:form.textfield class="form-field form-control" name="plz" required="true" />
+					</div>
+					<div class="ortContainer">
+						<label for="ort">Ort*</label>
+						<f:form.textfield class="form-field form-control" name="ort" required="true"/>
+					</div>
+				</div>
+			</div>
+			<div class="row twoColumns form-group">
+				<div class="column col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<label for="telefon">Telefonnummer</label>
+					<f:form.textfield class="form-field form-control" name="telefon" />
+				</div>
+				<div class="column col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<label for="email">E-Mail-Adresse*</label>
+					<f:form.textfield class="form-field form-control" name="email" required="true"/>
+				</div>
+			</div>
+			<div class="row oneColumns form-group">
+				<div class="column col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<f:form.checkbox name="datenschutz" value="zugestimmt" additionalAttributes="{required:'required'}" />
+					<label for="datenschutz">Hiermit akzeptiere ich die <f:link.page target="_blank" pageUid="{settings.DatenschutzPid}">Datenschutzbestimmungen</f:link.page>.</label>
+				</div>
+			</div>
+			<div class="row oneColumns form-group">
+				<div class="column col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p>Bitte füllen Sie die Pflichtfelder (*) vollständig aus, damit Ihnen die Prospekte zugeschickt werden können.</p>
+				</div>
+			</div>
+			<div class="row oneColumns form-actions">
+				<div class="column">
+					<f:form.button type="submit" class="btn btn-primary" name="submit" value="Send Request">
+						Prospektunterlagen anfordern
+					</f:form.button>
+				</div>
+			</div>
+		</f:form>
+		<f:form.validationResults>
+			<f:if condition="{validationResults.flattenedErrors}">
+				<ul class="errors">
+					<f:for each="{validationResults.flattenedErrors}" as="errors" key="propertyPath">
+						<li>{propertyPath}
+							<ul>
+								<f:for each="{errors}" as="error">
+									<li>{error.code}: {error}</li>
+								</f:for>
+							</ul>
+						</li>
+					</f:for>
+				</ul>
+			</f:if>
+		</f:form.validationResults>
+	</div>
+</html>

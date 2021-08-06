@@ -1,0 +1,28 @@
+<html data-namespace-typo3-fluid="true" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+    <div class="slideHouseContainer">
+        <f:link.action pageUid="{settings.detailpage}" arguments="{id: house.uid}">
+            <div class="slideContainer">
+                <div class="slideImage">
+                    <f:if condition="{house.sliderImages.0}">
+                        <f:then>
+                            <f:image image="{house.sliderImages.0}" />
+                        </f:then>
+                        <f:else>
+                            <p>Platzhalterbild</p>
+                        </f:else>
+                    </f:if>
+                </div>
+                <div class="houseNumber">
+                    <span class="houseNumberText">{house.houseNumber}</span>
+                </div>
+                <div class="houseName">
+                    <span class="houseNameText">{house.houseName}</span>
+                </div>
+            </div>
+        </f:link.action>
+    </div>
+
+</html>

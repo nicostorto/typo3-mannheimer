@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+	<f:section name="content">
+		<h1>Übersicht Fertighäuser</h1>
+
+		<f:flashMessages />
+
+		<table  class="tx_mtmfertighausweltintegration" >
+			<tr>
+				<th>Hausnummer</th>
+				<th>Fertighausbezeichnung</th>
+				<th>Anbieter</th>
+			</tr>
+
+			<f:for each="{houses}" as="house">
+				<tr>
+					<td><f:link.action action="show" arguments="{house : house}"> {house.houseNumber}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{house : house}"> {house.houseName}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{house : house}"> {house.manufacturerName}</f:link.action></td>
+				</tr>
+				</f:for>
+		</table>
+
+		<f:link.action action="sync">Fertighäuser synchronisieren</f:link.action>
+		<f:link.action controller="Manufacturer" action="sync">Anbieter synchronisieren</f:link.action>
+	</f:section>
+</html>

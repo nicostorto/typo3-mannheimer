@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-06-10T07:58:12Z" product-name="mtm_fertighauswelt_integration">
+		<header/>
+		<body>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house">
+				<source>Musterhaus</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.house_number">
+				<source>Hausnummer</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.house_name">
+				<source>Hausname</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.house_manufacturer">
+				<source>Fertighausanbieter</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.house_description">
+				<source>Hausbeschreibung</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.architectial_style">
+				<source>Baustil</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.number_of_rooms">
+				<source>Anzahl der Räume</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.living_space">
+				<source>Wohnfläche</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.energetic_standard">
+				<source>Energiestandard</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.slider_images">
+				<source>Sliderbilder</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.layout_basement">
+				<source>Grundriss Keller</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.living_space_basement">
+				<source>Wohnfläche Keller</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.layout_ground_floor">
+				<source>Grundriss Erdgeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.living_space_ground_floor">
+				<source>Wohnfläche Erdgeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.layout_upstairs">
+				<source>Grundriss Obergeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.living_space_upstairs">
+				<source>Wohnfläche Obergeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.layout_attic">
+				<source>Grundriss Dachgeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_house.living_space_attic">
+				<source>Wohnfläche Dachgeschoss</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer">
+				<source>Anbieter</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_name">
+				<source>Anbietername</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_slogan">
+				<source>Anbieterslogan</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.email">
+				<source>Kontakt E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.brochure_email">
+				<source>E-Mail für Prospektbestellung</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.phone">
+				<source>Kontaktnummer</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.fax">
+				<source>Faxnummer</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.website">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.strasse">
+				<source>Straße</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.plz">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.ort">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_mtmfertighausweltintegration_domain_model_manufacturer.manufacturer_logo">
+				<source>Anbieterlogo</source>
+			</trans-unit>
+			<trans-unit id="tx_mtm_fertighauswelt_integration_fertighausweltintegration.name">
+				<source>Fertighauswelt Integration</source>
+			</trans-unit>
+			<trans-unit id="tx_mtm_fertighauswelt_integration_fertighausweltintegration.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

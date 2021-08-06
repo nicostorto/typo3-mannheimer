@@ -1,0 +1,74 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="tx-mtm-fertighauswelt-integration-content-manufacturer" >
+        <f:if condition="{houses.0.sliderImages.0}">
+            <f:then>
+                <div class="manufacturerHeaderImage" style="background-image: url({f:uri.image(image: houses.0.sliderImages.0)}); background-size: cover; background-position: center;"></div>
+            </f:then>
+            <f:else>
+                <div class="manufacturerHeaderImage" style="background-image: url({f:uri.image(image: manufacturer.manufacturerLogo)}); background-size: auto; background-position: center; background-repeat: no-repeat; box-shadow: 0px 0px 6px #00000029;"></div>
+            </f:else>
+        </f:if>
+
+        <div class="infoBox">
+            <div class="manufacturerArrangement row">
+                <h1 class="manufacturerName">{manufacturer.manufacturerName}</h1>
+                <h3 class="manufacturerSlogan">{manufacturer.manufacturerSlogan}</h3>
+            </div>
+            <div class="manufacturerDetails row">
+                <div class="manufacturerLogo col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <f:if condition="{manufacturer.manufacturerLogo}">
+                        <f:then>
+                            <f:link.external uri="{manufacturer.website}" target="_blank" title="Zur Anbieter Website">
+                                <f:image image="{manufacturer.manufacturerLogo}" />
+                            </f:link.external>
+                        </f:then>
+                        <f:else>
+                            <span class="attributeValue">{manufacturer.manufacturerName}</span>
+                        </f:else>
+                    </f:if>
+                </div>
+                <div class="manufacturerContact col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span class="attributeKey">Kontaktmöglichkeiten:</span>
+                    <span class="attributeValue">{manufacturer.email}</span>
+                    <span class="attributeValue">{manufacturer.phone}</span>
+                </div>
+                <div class="manufacturerAddress col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <span class="attributeKey">Niederlassung:</span>
+                    <span class="attributeValue">{manufacturer.strasse}</span>
+                    <span class="attributeValue">{manufacturer.plz} {manufacturer.ort}</span>
+                </div>
+            </div>
+        </div>
+        <f:if condition="{manufacturer.description}">
+            <div class="beschreibung">
+                <h2>Beschreibung</h2>
+                <div class="beschreibungContent">
+                    <f:format.html>{manufacturer.description}</f:format.html>
+                </div>
+            </div>
+        </f:if>
+        <f:if condition="{houses}">
+            <div class="manufacturerHouses">
+                <h2>Musterhäuser</h2>
+                <div class="houses row threeColumns">
+                    <f:for each="{houses}" as="house">
+                        <div class="houseContainer column col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <f:link.action pageUid="{settings.housedetailpage}" controller="House" arguments="{id: house.uid}">
+                                <div class="houseWrapper">
+                                    <div class="houseImage" style="background-image: url({f:uri.image(image: house.sliderImages.0)}); background-size: cover; background-position: center;"></div>
+                                    <div class="houseName">
+                                        <span class="houseNameText">{house.houseName}</span>
+                                    </div>
+                                    <div class="houseNumber">
+                                        <span class="houseNumberText">{house.houseNumber}</span>
+                                    </div>
+                                </div>
+                            </f:link.action>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </f:if>
+    </div>
+</html>

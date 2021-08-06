@@ -1,0 +1,36 @@
+
+plugin.tx_mtmfertighausweltintegration_fertighausweltintegration {
+    view {
+        # cat=plugin.tx_mtmfertighausweltintegration_fertighausweltintegration/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Templates/
+        # cat=plugin.tx_mtmfertighausweltintegration_fertighausweltintegration/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Partials/
+        # cat=plugin.tx_mtmfertighausweltintegration_fertighausweltintegration/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_mtmfertighausweltintegration_fertighausweltintegration//a; type=string; label=Default storage PID
+        storagePid =
+    }
+    settings{
+        API-AuthString =
+        Stammordner =
+        MerklistPid =
+        DatenschutzPid =
+    }
+}
+
+module.tx_mtmfertighausweltintegration_fertighausweltsync {
+    view {
+        # cat=module.tx_mtmfertighausweltintegration_fertighausweltsync/file; type=string; label=Path to template root (BE)
+        templateRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Backend/Templates/
+        # cat=module.tx_mtmfertighausweltintegration_fertighausweltsync/file; type=string; label=Path to template partials (BE)
+        partialRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Backend/Partials/
+        # cat=module.tx_mtmfertighausweltintegration_fertighausweltsync/file; type=string; label=Path to template layouts (BE)
+        layoutRootPath = EXT:mtm_fertighauswelt_integration/Resources/Private/Backend/Layouts/
+    }
+    persistence {
+        # cat=module.tx_mtmfertighausweltintegration_fertighausweltsync//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

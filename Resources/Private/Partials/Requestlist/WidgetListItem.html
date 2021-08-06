@@ -1,0 +1,22 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+	<div class="widgetListItem column col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="houseNumber">
+			{listItems.house.housenumber}
+		</div>
+		<div class="houseInfo">
+			<div class="houseName">
+				{listItems.house.housename}
+			</div>
+			<div class="manufacturerName">
+				{listItems.manufacturer}
+			</div>
+		</div>
+		<div class="listItemActions">
+			<f:link.action action="removeitem" arguments="{id: listItems.house.uid}" title="Fertighaus von Merkliste entfernen">
+				<i class="la la-times-circle"></i>
+			</f:link.action>
+		</div>
+	</div>
+</html>

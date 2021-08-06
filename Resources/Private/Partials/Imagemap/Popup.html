@@ -1,0 +1,55 @@
+<html data-namespace-typo3-fluid="true" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <div id="ImageMapPopup-{house.houseNumber}" class=" popupContainer hidden">
+        <div class="mobileCloseContainer">
+            <i id="mobileClose" class="la la-times"></i>
+        </div>
+        <div class="houseContainer">
+            <div class="houseImage">
+                <f:if condition="{house.sliderImages.0}">
+                    <f:then>
+                        <f:image image="{house.sliderImages.0}" />
+                    </f:then>
+                    <f:else>
+                        <p>Platzhalterbild</p>
+                    </f:else>
+                </f:if>
+            </div>
+            <div class="houseWrapper">
+                <div class="row twoColumns">
+                    <div class="column col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="houseNumber">
+                            <span class="houseNumberText">{house.houseNumber}</span>
+                        </div>
+                    </div>
+                    <div class="column col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <div class="houseName">
+                            <span class="houseNameText">{house.houseName}</span>
+                        </div>
+                        <div class="houseExhibitor">
+                            <span class="exhibitorName">{housesManufacturer.{house.houseNumber}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row oneColumns">
+                    <div class="houseShortDescription">
+                        <span class="exhibitorName">
+                            <f:format.crop maxCharacters="320" respectWordBoundaries="true">
+                                <f:format.stripTags>
+                                    {house.houseDescription}
+                                </f:format.stripTags>
+                            </f:format.crop>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mtmButton primaryColor btn_left">
+                <f:link.action pageUid="{settings.housedetailpage}" controller="House" arguments="{id: house.uid}">
+                    Zur Detail-Ansicht <i class="la la-arrow-right"></i>
+                </f:link.action>
+            </div>
+        </div>
+    </div>
+
+</html>

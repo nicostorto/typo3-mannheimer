@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Requestlist" />
+
+	<f:section name="content">
+		<f:flashMessages />
+		<div class="requestListContainer row oneColumn">
+			<f:for each="{storedHouses}" as="listItems">
+				<f:render partial="Requestlist/ListItem" arguments="{listItems: listItems}" />
+			</f:for>
+		</div>
+		<f:if condition="{storedHouses}">
+			<f:render partial="Requestlist/RequestForm" arguments="{listItems: listItems}" />
+		</f:if>
+	</f:section>
+</html>

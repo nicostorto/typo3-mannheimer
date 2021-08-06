@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<div id="requestListWidget">
+		<div id="requestListTrigger">
+			<i class="las la-list"></i>
+			<div class="quantity">
+				<span class="quantity-text">
+					{countStoredHouses}
+				</span>
+			</div>
+		</div>
+		<div id="widgetHouseList" class="row oneColumn">
+			<f:flashMessages />
+			<f:for each="{storedHouses}" as="listItems">
+				<f:render partial="Requestlist/WidgetListItem" arguments="{listItems: listItems}" />
+			</f:for>
+			<f:link.page class="btn-primary" pageUid="{settings.MerklistPid}" title="Zur Merkliste">
+				Jetzt Prospekte anfordern
+			</f:link.page>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <general>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Allgemeine Einstellungen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Ansicht</label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Fertighäuser Übersicht</numIndex>
+                                        <numIndex index="1">House->list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Fertighäuser Detailansicht</numIndex>
+                                        <numIndex index="1">House->show;Requestlist->additem;Manufacturer->show</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Fertighäuser Slider</numIndex>
+                                        <numIndex index="1">House->slider</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">Anbieter Übersicht</numIndex>
+                                        <numIndex index="1">Manufacturer->list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">Anbieter Slider</numIndex>
+                                        <numIndex index="1">Manufacturer->slider</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">Anbieter Detailansicht</numIndex>
+                                        <numIndex index="1">Manufacturer->show</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">Anfrageliste</numIndex>
+                                        <numIndex index="1">Requestlist->show;Requestlist->removeitem;Requestlist->sendrequest</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">Geländeplan</numIndex>
+                                        <numIndex index="1">Imagemap->show</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+
+                    <settings.detailpage>
+                        <TCEforms>
+                            <label>Detailseite</label>
+                            <displayCond>
+                                <OR>
+                                    <numIndex index="0">FIELD:switchableControllerActions:=:House->list</numIndex>
+                                    <numIndex index="1">FIELD:switchableControllerActions:=:House->slider</numIndex>
+                                    <numIndex index="2">FIELD:switchableControllerActions:=:Manufacturer->list</numIndex>
+                                    <numIndex index="3">FIELD:switchableControllerActions:=:Manufacturer->slider</numIndex>
+                                </OR>
+                            </displayCond>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.detailpage>
+                    <settings.housedetailpage>
+                        <TCEforms>
+                            <label>Haus Detailseite</label>
+                            <displayCond>
+                                <OR>
+                                    <numIndex index="0">FIELD:switchableControllerActions:=:Manufacturer->show</numIndex>
+                                    <numIndex index="1">FIELD:switchableControllerActions:=:Imagemap->show</numIndex>
+                                </OR>
+                            </displayCond>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.housedetailpage>
+                    <settings.gelaendeplan>
+                        <TCEforms>
+                            <label>Geländeplan</label>
+                            <displayCond>FIELD:switchableControllerActions:=:Imagemap->show</displayCond>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Deutsches Fertighaus Center</numIndex>
+                                        <numIndex index="1">deutsches-fertighaus-center</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Hausbaupark</numIndex>
+                                        <numIndex index="1">hausbaupark</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.gelaendeplan>
+                    <settings.manufacturerdetailpage>
+                        <TCEforms>
+                            <label>Anbieter Detailseite</label>
+                            <displayCond>FIELD:switchableControllerActions:=:House->show;Requestlist->additem</displayCond>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.manufacturerdetailpage>
+                    <settings.privacypolicy>
+                        <TCEforms>
+                            <label>Datenschutzseite</label>
+                            <displayCond>FIELD:switchableControllerActions:=:Requestlist->show</displayCond>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.privacypolicy>
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

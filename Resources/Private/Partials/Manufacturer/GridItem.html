@@ -1,0 +1,27 @@
+<html data-namespace-typo3-fluid="true" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <div class="manufacturerContainer column col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <f:link.action pageUid="{settings.detailpage}" arguments="{id: manufacturer.uid}">
+            <div class="manufacturerWrapper">
+                <div class="manufacturerImage">
+                    <f:if condition="{manufacturer.manufacturerLogo}">
+                        <f:then>
+                            <f:image image="{manufacturer.manufacturerLogo}" />
+                        </f:then>
+                        <f:else>
+                            <p>Platzhalterbild</p>
+                        </f:else>
+                    </f:if>
+                </div>
+                <div class="manufacturerName">
+                    <span class="manufacturerNameText">{manufacturer.manufacturerName}</span>
+                </div>
+                <div class="manufacturerSlogan">
+                    <span class="manufacturerSloganText">{manufacturer.manufacturerSlogan}</span>
+                </div>
+            </div>
+        </f:link.action>
+    </div>
+
+</html>

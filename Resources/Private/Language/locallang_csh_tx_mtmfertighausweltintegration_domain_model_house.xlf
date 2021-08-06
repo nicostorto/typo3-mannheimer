@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-09-04T13:37:26Z" product-name="mtm_fertighauswelt_integration">
+		<header/>
+		<body>
+			<trans-unit id="house_number.description">
+				<source>Hausnummer</source>
+			</trans-unit>
+			<trans-unit id="house_name.description">
+				<source>Hausname</source>
+			</trans-unit>
+			<trans-unit id="house_manufacturer.description">
+				<source>Fertighausanbieter</source>
+			</trans-unit>
+			<trans-unit id="house_description.description">
+				<source>Hausbeschreibung</source>
+			</trans-unit>
+			<trans-unit id="architectial_style.description">
+				<source>Baustil</source>
+			</trans-unit>
+			<trans-unit id="number_of_rooms.description">
+				<source>Anzahl der Räume</source>
+			</trans-unit>
+			<trans-unit id="living_space.description">
+				<source>Wohnfläche</source>
+			</trans-unit>
+			<trans-unit id="energetic_standard.description">
+				<source>Energiestandard</source>
+			</trans-unit>
+			<trans-unit id="slider_images.description">
+				<source>Sliderbilder</source>
+			</trans-unit>
+			<trans-unit id="layout_basement.description">
+				<source>Grundriss Keller</source>
+			</trans-unit>
+			<trans-unit id="living_space_basement.description">
+				<source>Wohnfläche Keller</source>
+			</trans-unit>
+			<trans-unit id="layout_ground_floor.description">
+				<source>Grundriss Erdgeschoss</source>
+			</trans-unit>
+			<trans-unit id="living_space_ground_floor.description">
+				<source>Wohnfläche Erdgeschoss</source>
+			</trans-unit>
+			<trans-unit id="layout_upstairs.description">
+				<source>Grundriss Obergeschoss</source>
+			</trans-unit>
+			<trans-unit id="living_space_upstairs.description">
+				<source>Wohnfläche Obergeschoss</source>
+			</trans-unit>
+			<trans-unit id="layout_attic.description">
+				<source>Grundriss Dachgeschoss</source>
+			</trans-unit>
+			<trans-unit id="living_space_attic.description">
+				<source>Wohnfläche Dachgeschoss</source>
+			</trans-unit>
+			<trans-unit id="contact_data">
+				<source>Musterhaus Kontaktdaten</source>
+			</trans-unit>
+			<trans-unit id="youtube_data">
+				<source>Youtube Einbindungscode</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

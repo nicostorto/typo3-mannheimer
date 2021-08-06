@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-06-10T07:58:12Z" product-name="mtm_fertighauswelt_integration">
+		<header/>
+		<body>
+			<trans-unit id="manufacturer_name.description">
+				<source>Anbietername</source>
+			</trans-unit>
+			<trans-unit id="manufacturer_slogan.description">
+				<source>Anbieterslogan</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>Kontakt E-Mail</source>
+			</trans-unit>
+			<trans-unit id="brochure_email.description">
+				<source>E-Mail für Prospektbestellung</source>
+			</trans-unit>
+			<trans-unit id="phone.description">
+				<source>Kontaktnummer</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>Faxnummer</source>
+			</trans-unit>
+			<trans-unit id="website.description">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="strasse.description">
+				<source>Straße</source>
+			</trans-unit>
+			<trans-unit id="plz.description">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="ort.description">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="manufacturer_logo.description">
+				<source>Anbieterlogo</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,29 @@
+<html data-namespace-typo3-fluid="true" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+    <div class="houseContainer column col-xs-6 col-sm-6 col-md-4 col-lg-3">
+        <f:link.action pageUid="{settings.detailpage}" arguments="{id: house.uid}">
+            <div class="houseWrapper">
+                <f:if condition="{house.sliderImages.0}">
+                    <f:then>
+                        <div class="houseImage" style="background-image: url({f:uri.image(image: house.sliderImages.0)}); background-size: cover; background-position: center;"></div>
+                    </f:then>
+                    <f:else>
+                        <div class="houseImage" style="background-image: url({f:uri.resource(path: 'Icons/baustelle.jpg')}); background-size: cover; background-position: center;"></div>
+                    </f:else>
+                </f:if>
+                <div class="houseName">
+                    <span class="houseNameText">{house.houseName}</span>
+                </div>
+                <div class="houseExhibitor">
+                    <span class="exhibitorName">{housesManufacturer.{house.houseNumber}}</span>
+                </div>
+                <div class="houseNumber">
+                    <span class="houseNumberText">{house.houseNumber}</span>
+                </div>
+            </div>
+        </f:link.action>
+    </div>
+
+</html>
